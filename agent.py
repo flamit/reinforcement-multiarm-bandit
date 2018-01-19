@@ -31,7 +31,7 @@ class EpsilonGreedy:
         # self.average is a (n, p) matrix where x=10 and p=2 
         # for each x is the arm x is in range(10):[0,..,9]
             # average[x]:
-                # 1.    average reward for arm x 
+                 1.    average reward for arm x 
                 # 2.    count of reward used to compute the average reward for arm x
         self.average = np.zeros((10,2))
 
@@ -96,7 +96,7 @@ class UCBAgent:
         self.step_number = 0
 
         # trigger to start using UCB algorithm
-        self.step_trigger = 50
+        self.step_trigger = 80
 
     def act(self, observation):
         # We first play each arm one time
